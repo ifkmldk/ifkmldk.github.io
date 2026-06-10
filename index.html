@@ -367,59 +367,46 @@
     </div>
 
     <!-- [EDIT] Replace these with your real projects. Keep the Problem→Insight framing. -->
+    <!-- Project 1 — flagship end-to-end -->
     <div class="project reveal">
       <span class="proj-idx">01</span>
       <div>
-        <h3 class="proj-title">SQL Performance: Multi-Tenant Reporting Optimization</h3>
-        <p class="proj-desc">Rewrote a slow multi-tenant reporting query using LATERAL joins, preserving exact output while cutting execution time significantly. A deep dive into reading query plans and optimizing PostgreSQL at scale.</p>
+        <h3 class="proj-title">HR Analytics — End-to-End People Analytics</h3>
+        <p class="proj-desc">A full analyst workflow on a ~4,500-employee HR dataset: raw messy data → cleaning → SQL modelling → analysis → dashboard. Answers real questions on attrition, performance, and compensation, with a reproducible data pipeline behind it.</p>
         <div class="proj-tags">
-          <span class="tag">PostgreSQL</span><span class="tag">LATERAL joins</span><span class="tag">Optimization</span><span class="tag">Window functions</span>
+          <span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">pandas</span><span class="tag">End-to-end</span><span class="tag">People Analytics</span>
         </div>
       </div>
       <div class="proj-links">
-        <a href="#">GitHub →</a><br><a href="#writing">Write-up →</a>
+        <a href="https://github.com/ifkmldk/hr-analytics" target="_blank" rel="noopener">GitHub →</a>
       </div>
     </div>
 
     <div class="project reveal">
       <span class="proj-idx">02</span>
       <div>
-        <h3 class="proj-title">People Analytics: KPI Framework &amp; Dashboard</h3>
-        <p class="proj-desc">End-to-end build of a Balanced Scorecard KPI framework mapped to an organizational hierarchy — from PostgreSQL data model to Python analysis to an interactive dashboard surfacing performance trends for leadership.</p>
+        <h3 class="proj-title">Data Cleaning Pipeline</h3>
+        <p class="proj-desc">The cleaning stage of the HR project, built two ways: a step-by-step notebook that documents every decision, and a modular production script. Handles mixed date formats, inconsistent categories, text-encoded numbers, duplicates, and missing values — with referential-integrity validation at the end.</p>
         <div class="proj-tags">
-          <span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">BSC / KPI</span><span class="tag">Dashboard</span>
+          <span class="tag">Python</span><span class="tag">pandas</span><span class="tag">Data cleaning</span><span class="tag">ETL</span><span class="tag">Validation</span>
         </div>
       </div>
       <div class="proj-links">
-        <a href="#">GitHub →</a><br><a href="#dashboards">Live demo →</a>
+        <a href="https://github.com/ifkmldk/hr-analytics/blob/main/notebooks/01_data_cleaning.ipynb" target="_blank" rel="noopener">Notebook →</a><br><a href="https://github.com/ifkmldk/hr-analytics/blob/main/scripts/clean_hr_data.py" target="_blank" rel="noopener">Script →</a>
       </div>
     </div>
 
     <div class="project reveal">
       <span class="proj-idx">03</span>
       <div>
-        <h3 class="proj-title">Data Cleaning &amp; Name Standardization Pipeline</h3>
-        <p class="proj-desc">Built a Python pipeline using fuzzy matching (SequenceMatcher) to standardize and deduplicate messy organizational name data across a large division — turning inconsistent records into a clean, analysis-ready dataset.</p>
+        <h3 class="proj-title">SQL Analysis — Joins, CTEs &amp; Window Functions</h3>
+        <p class="proj-desc">SQL layer of the HR project: querying five related tables in PostgreSQL — multi-table joins, CTEs, window functions, and a self-join on the manager hierarchy to model the org chart and surface attrition and performance patterns.</p>
         <div class="proj-tags">
-          <span class="tag">Python</span><span class="tag">Fuzzy matching</span><span class="tag">Data cleaning</span><span class="tag">ETL</span>
+          <span class="tag">PostgreSQL</span><span class="tag">SQL</span><span class="tag">CTEs</span><span class="tag">Window functions</span><span class="tag">Self-join</span>
         </div>
       </div>
       <div class="proj-links">
-        <a href="#">GitHub →</a>
-      </div>
-    </div>
-
-    <div class="project reveal">
-      <span class="proj-idx">04</span>
-      <div>
-        <h3 class="proj-title">Workflow Automation Toolkit</h3>
-        <p class="proj-desc">A set of Python automation scripts for repetitive data tasks — bulk QR generation embedded into Excel, automated image filtering with AI, and CSV-to-template injection with strict formatting. Small tools, real hours saved.</p>
-        <div class="proj-tags">
-          <span class="tag">Python</span><span class="tag">Automation</span><span class="tag">Excel</span><span class="tag">AI tooling</span>
-        </div>
-      </div>
-      <div class="proj-links">
-        <a href="#">GitHub →</a>
+        <a href="https://github.com/ifkmldk/hr-analytics" target="_blank" rel="noopener">GitHub →</a>
       </div>
     </div>
   </div>
