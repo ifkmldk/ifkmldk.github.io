@@ -46,7 +46,7 @@
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--line);
   }
-  nav .wrap { display: flex; align-items: center; justify-content: space-between; : 72px; }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 72px; }
   .logo { font-family: var(--mono); font-size: 15px; font-weight: 500; letter-spacing: -0.02em; }
   .logo b { color: var(--accent); }
   .nav-links { display: flex; gap: 30px; }
@@ -105,11 +105,15 @@
     border: 1px solid var(--line);
     background: var(--bg-alt);
     overflow: hidden;
+    position: relative;
   }
   .dash-frame .tableauPlaceholder {
-    transform-origin: top left;
-    transform: scale(0.92);
-    width: 109% !important;
+    width: 100% !important;
+  }
+  .dash-frame .tableauPlaceholder object,
+  .dash-frame .tableauPlaceholder iframe {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
   .post { display: grid; grid-template-columns: 130px 1fr; gap: 28px; padding: 26px 0; border-top: 1px solid var(--line); align-items: baseline; }
@@ -314,8 +318,8 @@
       <script type='text/javascript'>
         var divElement = document.getElementById('viz1781139612114');
         var vizElement = divElement.getElementsByTagName('object')[0];
-        vizElement.style.width = '100%';
-        vizElement.style.height = '650px';
+        vizElement.style.width = divElement.offsetWidth + 'px';
+        vizElement.style.height = '600px';
         var scriptElement = document.createElement('script');
         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
         vizElement.parentNode.insertBefore(scriptElement, vizElement);
