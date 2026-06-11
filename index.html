@@ -106,7 +106,11 @@
     background: var(--bg-alt);
     overflow: hidden;
   }
-  .dash-frame .tableauPlaceholder { width: 100%; }
+  .dash-frame .tableauPlaceholder {
+    transform-origin: top left;
+    transform: scale(0.92);
+    width: 109% !important;
+  }
 
   .post { display: grid; grid-template-columns: 130px 1fr; gap: 28px; padding: 26px 0; border-top: 1px solid var(--line); align-items: baseline; }
   .post:first-of-type { border-top: none; }
