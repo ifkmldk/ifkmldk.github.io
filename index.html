@@ -5,151 +5,156 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Irsyad Akmaldika — Data Analyst | BI | Reporting | Data Operations</title>
 <meta name="description" content="Data professional skilled in SQL, Python, and BI — open to roles across data analysis, business intelligence, reporting, and data operations. Remote, worldwide.">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Newsreader:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-
 <style>
   :root {
-    --bg: #faf9f6;
-    --bg-alt: #f3f1ea;
-    --ink: #1a1a17;
-    --ink-soft: #55534c;
-    --ink-faint: #8a8780;
-    --line: #e2dfd6;
-    --accent: #b4472e;
-    --accent-soft: #f0e6e1;
-    --display: 'Fraunces', Georgia, serif;
-    --body: 'Newsreader', Georgia, serif;
-    --mono: 'IBM Plex Mono', monospace;
-    --maxw: 1080px;
+    --bg:#faf9f6; --bg-alt:#f3f1ea; --ink:#1a1a17; --ink-soft:#55534c;
+    --ink-faint:#8a8780; --line:#e2dfd6; --accent:#b4472e; --accent-soft:#f0e6e1;
+    --green:#3B6D11; --green-soft:#e8f0e6; --amber:#BA7517; --amber-soft:#fef3e0;
+    --display:"Fraunces",Georgia,serif; --body:"Newsreader",Georgia,serif;
+    --mono:"IBM Plex Mono",monospace; --maxw:1080px;
   }
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:90px}
+  body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:19px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  ::selection{background:var(--accent);color:var(--bg)}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+  button{font-family:inherit;cursor:pointer}
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; scroll-padding-top: 90px; }
-  body {
-    background: var(--bg);
-    color: var(--ink);
-    font-family: var(--body);
-    font-size: 19px;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-  }
-  ::selection { background: var(--accent); color: var(--bg); }
-  a { color: inherit; text-decoration: none; }
-  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 32px; }
+  nav{position:sticky;top:0;z-index:100;background:rgba(250,249,246,.90);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .logo{font-family:var(--mono);font-size:15px;font-weight:500;letter-spacing:-.02em}
+  .logo b{color:var(--accent);font-weight:500}
+  .nav-links{display:flex;gap:30px}
+  .nav-links a{font-family:var(--mono);font-size:13px;color:var(--ink-soft);letter-spacing:.02em;transition:color .2s}
+  .nav-links a:hover{color:var(--accent)}
+  .menu-btn{display:none;font-family:var(--mono);font-size:13px;background:none;border:none;color:var(--ink)}
 
-  nav {
-    position: sticky; top: 0; z-index: 100;
-    background: rgba(250,249,246,0.85);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--line);
-  }
-  nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 72px; }
-  .logo { font-family: var(--mono); font-size: 15px; font-weight: 500; letter-spacing: -0.02em; }
-  .logo b { color: var(--accent); }
-  .nav-links { display: flex; gap: 30px; }
-  .nav-links a { font-family: var(--mono); font-size: 13px; color: var(--ink-soft); letter-spacing: 0.02em; transition: color 0.2s; }
-  .nav-links a:hover { color: var(--accent); }
-  .menu-btn { display: none; font-family: var(--mono); font-size: 13px; background: none; border: none; cursor: pointer; color: var(--ink); }
+  header{padding:110px 0 90px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-family:var(--mono);font-size:13px;color:var(--accent);letter-spacing:.08em;text-transform:uppercase;margin-bottom:28px}
+  h1{font-family:var(--display);font-weight:400;font-size:clamp(44px,7vw,82px);line-height:1.02;letter-spacing:-.02em;margin-bottom:30px}
+  h1 em{font-style:italic;color:var(--accent)}
+  .lead{font-size:22px;color:var(--ink-soft);max-width:640px;line-height:1.55}
+  .hero-cta{margin-top:42px;display:flex;gap:16px;flex-wrap:wrap}
+  .btn{font-family:var(--mono);font-size:13px;letter-spacing:.02em;padding:14px 26px;border:1px solid var(--ink);transition:all .2s;display:inline-block}
+  .btn-primary{background:var(--ink);color:var(--bg)}
+  .btn-primary:hover{background:var(--accent);border-color:var(--accent)}
+  .btn-ghost:hover{background:var(--ink);color:var(--bg)}
 
-  header { padding: 110px 0 90px; border-bottom: 1px solid var(--line); }
-  .eyebrow { font-family: var(--mono); font-size: 13px; color: var(--accent); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 28px; }
-  h1 { font-family: var(--display); font-weight: 400; font-size: clamp(44px, 7vw, 82px); line-height: 1.02; letter-spacing: -0.02em; margin-bottom: 30px; }
-  h1 em { font-style: italic; color: var(--accent); }
-  .lead { font-size: 22px; color: var(--ink-soft); max-width: 640px; line-height: 1.55; }
-  .hero-cta { margin-top: 42px; display: flex; gap: 16px; flex-wrap: wrap; }
-  .btn { font-family: var(--mono); font-size: 13px; letter-spacing: 0.02em; padding: 14px 26px; border: 1px solid var(--ink); transition: all 0.2s; }
-  .btn-primary { background: var(--ink); color: var(--bg); }
-  .btn-primary:hover { background: var(--accent); border-color: var(--accent); }
-  .btn-ghost:hover { background: var(--ink); color: var(--bg); }
+  section{padding:90px 0;border-bottom:1px solid var(--line)}
+  .sec-head{display:flex;align-items:baseline;gap:18px;margin-bottom:54px}
+  .sec-num{font-family:var(--mono);font-size:13px;color:var(--accent)}
+  .sec-title{font-family:var(--display);font-weight:400;font-size:clamp(30px,4vw,44px);letter-spacing:-.02em}
 
-  section { padding: 90px 0; border-bottom: 1px solid var(--line); }
-  .sec-head { display: flex; align-items: baseline; gap: 18px; margin-bottom: 54px; }
-  .sec-num { font-family: var(--mono); font-size: 13px; color: var(--accent); }
-  .sec-title { font-family: var(--display); font-weight: 400; font-size: clamp(30px, 4vw, 44px); letter-spacing: -0.02em; }
+  .about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:60px}
+  .about-grid p{color:var(--ink-soft);margin-bottom:20px}
+  .about-grid p strong{color:var(--ink);font-weight:400}
+  .facts{font-family:var(--mono);font-size:14px}
+  .fact{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--line)}
+  .fact:first-child{border-top:1px solid var(--line)}
+  .fact span:first-child{color:var(--ink-faint)}
+  .fact span:last-child{color:var(--ink)}
 
-  .about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 60px; }
-  .about-grid p { color: var(--ink-soft); margin-bottom: 20px; }
-  .about-grid p strong { color: var(--ink); font-weight: 400; }
-  .facts { font-family: var(--mono); font-size: 14px; }
-  .fact { display: flex; justify-content: space-between; padding: 14px 0; border-bottom: 1px solid var(--line); }
-  .fact span:first-child { color: var(--ink-faint); }
-  .fact span:last-child { color: var(--ink); }
+  .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+  .skill-card{background:var(--bg);padding:32px 28px;transition:background .2s}
+  .skill-card:hover{background:var(--accent-soft)}
+  .skill-card h3{font-family:var(--display);font-weight:500;font-size:21px;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+  .skill-card h3 .dot{width:7px;height:7px;background:var(--accent);border-radius:50%;flex-shrink:0}
+  .skill-card ul{list-style:none;font-family:var(--mono);font-size:13px;color:var(--ink-soft);line-height:2.1}
 
-  .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
-  .skill-card { background: var(--bg); padding: 32px 28px; transition: background 0.2s; }
-  .skill-card:hover { background: var(--accent-soft); }
-  .skill-card h3 { font-family: var(--display); font-weight: 500; font-size: 21px; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
-  .skill-card h3 .dot { width: 7px; height: 7px; background: var(--accent); border-radius: 50%; flex-shrink: 0; }
-  .skill-card ul { list-style: none; font-family: var(--mono); font-size: 13px; color: var(--ink-soft); line-height: 2; }
+  .proj-filters{display:flex;gap:8px;margin-bottom:52px;flex-wrap:wrap}
+  .filter-pill{font-family:var(--mono);font-size:12px;letter-spacing:.04em;padding:9px 22px;border:1px solid var(--line);background:none;color:var(--ink-soft);transition:all .2s}
+  .filter-pill:hover{background:var(--bg-alt)}
+  .filter-pill.active{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 
-  .project { display: grid; grid-template-columns: 60px 1fr auto; gap: 28px; padding: 38px 0; border-top: 1px solid var(--line); align-items: start; transition: padding-left 0.25s ease; }
-  .project:first-of-type { border-top: none; }
-  .project:hover { padding-left: 12px; }
-  .project:hover .proj-title { color: var(--accent); }
-  .proj-idx { font-family: var(--mono); font-size: 13px; color: var(--ink-faint); padding-top: 6px; }
-  .proj-title { font-family: var(--display); font-weight: 500; font-size: 26px; letter-spacing: -0.01em; transition: color 0.2s; margin-bottom: 10px; }
-  .proj-desc { color: var(--ink-soft); font-size: 17px; max-width: 560px; margin-bottom: 14px; }
-  .proj-tags { display: flex; flex-wrap: wrap; gap: 8px; }
-  .tag { font-family: var(--mono); font-size: 11px; color: var(--ink-soft); background: var(--bg-alt); padding: 4px 10px; border: 1px solid var(--line); }
-  .proj-links { font-family: var(--mono); font-size: 13px; padding-top: 6px; white-space: nowrap; }
-  .proj-links a { color: var(--accent); border-bottom: 1px solid transparent; transition: border-color 0.2s; }
-  .proj-links a:hover { border-color: var(--accent); }
+  .proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+  .proj-group-sep{grid-column:1/-1;display:flex;align-items:center;gap:16px;padding-top:36px}
+  .proj-group-sep:first-child{padding-top:0}
+  .proj-group-label{font-family:var(--mono);font-size:11px;color:var(--ink-faint);letter-spacing:.10em;text-transform:uppercase;white-space:nowrap}
+  .proj-group-line{flex:1;height:1px;background:var(--line)}
+  .is-hidden{display:none !important}
 
-  /* Dashboard section */
-  .dash-note { font-family: var(--mono); font-size: 13px; color: var(--ink-faint); margin-bottom: 28px; }
-  .dash-frame {
-    width: 100%;
-    border: 1px solid var(--line);
-    background: var(--bg-alt);
-    overflow: hidden;
-    position: relative;
-    min-height: 1000px;
-  }
-  .dash-frame .tableauPlaceholder {
-    width: 100% !important;
-  }
-  .dash-frame .tableauPlaceholder object,
-  .dash-frame .tableauPlaceholder iframe {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
+  .proj-card{border:1px solid var(--line);padding:32px 28px;background:var(--bg);transition:border-color .25s,transform .25s,box-shadow .25s;position:relative;display:flex;flex-direction:column}
+  .proj-card:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:0 10px 40px rgba(0,0,0,.07)}
+  .proj-card--featured{grid-column:1/-1}
 
-  .post { display: grid; grid-template-columns: 130px 1fr; gap: 28px; padding: 26px 0; border-top: 1px solid var(--line); align-items: baseline; }
-  .post:first-of-type { border-top: none; }
-  .post-date { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
-  .post-title { font-family: var(--display); font-weight: 500; font-size: 22px; transition: color 0.2s; }
-  .post:hover .post-title { color: var(--accent); }
-  .post-excerpt { color: var(--ink-soft); font-size: 16px; margin-top: 6px; }
+  .proj-card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+  .proj-card-num{font-family:var(--mono);font-size:13px;color:var(--ink-faint)}
+  .proj-phase-label{font-family:var(--mono);font-size:10px;color:var(--ink-faint);letter-spacing:.08em;text-transform:uppercase}
 
-  .contact-flex { display: flex; flex-direction: column; gap: 28px; }
-  .contact-big { font-family: var(--display); font-weight: 400; font-style: italic; font-size: clamp(28px, 5vw, 52px); letter-spacing: -0.02em; line-height: 1.1; }
-  .contact-big a { border-bottom: 2px solid var(--accent-soft); transition: border-color 0.2s; }
-  .contact-big a:hover { border-color: var(--accent); }
-  .contact-row { display: flex; gap: 26px; flex-wrap: wrap; font-family: var(--mono); font-size: 14px; }
-  .contact-row a { color: var(--ink-soft); border-bottom: 1px solid var(--line); padding-bottom: 2px; transition: color 0.2s; }
-  .contact-row a:hover { color: var(--accent); }
+  .status-badge{font-family:var(--mono);font-size:10px;letter-spacing:.07em;padding:4px 10px;text-transform:uppercase}
+  .status--done{background:var(--green-soft);color:var(--green)}
+  .status--progress{background:var(--amber-soft);color:var(--amber)}
+  .status--planned{background:var(--bg-alt);color:var(--ink-faint);border:1px solid var(--line)}
 
-  footer { padding: 40px 0; }
-  footer .wrap { display: flex; justify-content: space-between; align-items: center; font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+  .proj-card-title{font-family:var(--display);font-weight:500;font-size:22px;letter-spacing:-.01em;line-height:1.2;margin-bottom:12px;transition:color .2s}
+  .proj-card:hover .proj-card-title{color:var(--accent)}
+  .proj-card--featured .proj-card-title{font-size:28px;margin-bottom:14px}
 
-  .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.7s ease, transform 0.7s ease; }
-  .reveal.in { opacity: 1; transform: none; }
+  .proj-card-desc{font-size:16px;color:var(--ink-soft);line-height:1.65;margin-bottom:24px;flex:1}
 
-  @media (max-width: 820px) {
-    body { font-size: 18px; }
-    .nav-links { display: none; }
-    .nav-links.open { display: flex; flex-direction: column; gap: 0; position: absolute; top: 72px; left: 0; right: 0; background: var(--bg); border-bottom: 1px solid var(--line); }
-    .nav-links.open a { padding: 16px 32px; border-top: 1px solid var(--line); }
-    .menu-btn { display: block; }
-    .about-grid { grid-template-columns: 1fr; gap: 40px; }
-    .skills-grid { grid-template-columns: 1fr; }
-    .project { grid-template-columns: 1fr; gap: 12px; }
-    .proj-idx { display: none; }
-    .proj-links { padding-top: 0; }
-    .post { grid-template-columns: 1fr; gap: 6px; }
+  .proj-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:24px}
+  .proj-metric{background:var(--bg-alt);padding:15px 18px}
+  .proj-metric-val{font-family:var(--mono);font-size:22px;font-weight:500;color:var(--ink);letter-spacing:-.02em;margin-bottom:4px}
+  .proj-metric-lbl{font-family:var(--mono);font-size:10px;color:var(--ink-faint);letter-spacing:.03em;line-height:1.5}
+
+  .proj-scope{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px}
+  .scope-item{display:flex;gap:14px;align-items:flex-start;padding:14px 16px;background:var(--bg-alt);border:1px solid var(--line)}
+  .scope-num{font-family:var(--mono);font-size:11px;color:var(--accent);font-weight:500;flex-shrink:0;padding-top:1px}
+  .scope-title{font-family:var(--mono);font-size:12px;font-weight:500;color:var(--ink);margin-bottom:4px;line-height:1.4}
+  .scope-kpis{font-family:var(--mono);font-size:10px;color:var(--ink-faint);line-height:1.75}
+
+  .proj-card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:22px}
+  .tag{font-family:var(--mono);font-size:11px;color:var(--ink-soft);background:var(--bg-alt);padding:4px 10px;border:1px solid var(--line)}
+
+  .proj-card-footer{display:flex;justify-content:space-between;align-items:center;padding-top:18px;border-top:1px solid var(--line);margin-top:auto;font-family:var(--mono);font-size:12px}
+  .proj-card-domain{color:var(--ink-faint);font-size:11px}
+  .proj-card-links{display:flex;align-items:center}
+  .proj-card-links a{color:var(--accent);transition:opacity .2s}
+  .proj-card-links a:hover{opacity:.7}
+  .proj-card-links .sep{color:var(--line);margin:0 10px;user-select:none}
+
+  .dash-note{font-family:var(--mono);font-size:13px;color:var(--ink-faint);margin-bottom:24px}
+  .dash-frame{width:100%;border:1px solid var(--line);background:var(--bg-alt);overflow:hidden;min-height:1000px}
+
+  .post{display:grid;grid-template-columns:130px 1fr;gap:28px;padding:26px 0;border-top:1px solid var(--line);align-items:baseline}
+  .post:first-of-type{border-top:none}
+  .post-date{font-family:var(--mono);font-size:12px;color:var(--ink-faint)}
+  .post-title{font-family:var(--display);font-weight:500;font-size:22px;transition:color .2s}
+  .post:hover .post-title{color:var(--accent)}
+  .post-excerpt{color:var(--ink-soft);font-size:16px;margin-top:6px}
+
+  .contact-flex{display:flex;flex-direction:column;gap:28px}
+  .contact-big{font-family:var(--display);font-weight:400;font-style:italic;font-size:clamp(28px,5vw,52px);letter-spacing:-.02em;line-height:1.1}
+  .contact-big a{border-bottom:2px solid var(--accent-soft);transition:border-color .2s}
+  .contact-big a:hover{border-color:var(--accent)}
+  .contact-row{display:flex;gap:26px;flex-wrap:wrap;font-family:var(--mono);font-size:14px}
+  .contact-row a{color:var(--ink-soft);border-bottom:1px solid var(--line);padding-bottom:2px;transition:color .2s}
+  .contact-row a:hover{color:var(--accent)}
+
+  footer{padding:40px 0}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:12px;color:var(--ink-faint)}
+
+  .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media(max-width:820px){
+    body{font-size:18px}
+    .nav-links{display:none;position:absolute;top:72px;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--line);flex-direction:column;gap:0}
+    .nav-links.open{display:flex}
+    .nav-links.open a{padding:16px 32px;border-top:1px solid var(--line)}
+    .menu-btn{display:block}
+    .about-grid{grid-template-columns:1fr;gap:40px}
+    .skills-grid{grid-template-columns:1fr}
+    .proj-grid{grid-template-columns:1fr}
+    .proj-card--featured{grid-column:1}
+    .proj-metrics{grid-template-columns:1fr 1fr}
+    .proj-scope{grid-template-columns:1fr}
+    .post{grid-template-columns:1fr;gap:6px}
+    footer .wrap{flex-direction:column;gap:8px;text-align:center}
   }
 </style>
 </head>
@@ -157,7 +162,7 @@
 
 <nav>
   <div class="wrap">
-    <a href="#top" class="logo">Irsyad Akmaldika</a>
+    <a href="#top" class="logo">Irsyad <b>Akmaldika</b></a>
     <button class="menu-btn" onclick="document.getElementById('navlinks').classList.toggle('open')">MENU</button>
     <div class="nav-links" id="navlinks">
       <a href="#about">About</a>
@@ -172,34 +177,31 @@
 
 <header id="top">
   <div class="wrap">
-    <p class="eyebrow reveal">Data Analyst · BI · Reporting · Data Operations · Remote</p>
+    <p class="eyebrow reveal">Data Analyst &middot; BI &middot; Reporting &middot; Data Operations &middot; Remote</p>
     <h1 class="reveal">Turning raw data<br>into <em>decisions</em> that<br>move the business.</h1>
-    <p class="lead reveal">I'm Irsyad — I work across the full data workflow: cleaning and structuring messy data, writing SQL, building reports and dashboards, and surfacing the insights teams act on. Open to roles in data analysis, BI, reporting, and data operations.</p>
+    <p class="lead reveal">I&rsquo;m Irsyad &mdash; I work across the full data workflow: cleaning and structuring messy data, writing SQL, building reports and dashboards, and surfacing the insights teams act on. Open to roles in data analysis, BI, reporting, and data operations.</p>
     <div class="hero-cta reveal">
       <a href="#projects" class="btn btn-primary">View Projects</a>
-      <a href="assets/Irsyad Fadhilah Akmaldika - Data Analyst - CV.pdf" class="btn btn-ghost" download>Download Résumé</a>
+      <a href="assets/Irsyad Fadhilah Akmaldika - Data Analyst - CV.pdf" class="btn btn-ghost" download>Download R&eacute;sum&eacute;</a>
     </div>
   </div>
 </header>
 
 <section id="about">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="sec-num">01</span>
-      <h2 class="sec-title">About</h2>
-    </div>
+    <div class="sec-head reveal"><span class="sec-num">01</span><h2 class="sec-title">About</h2></div>
     <div class="about-grid">
       <div class="reveal">
         <p>I work at the intersection of <strong>data engineering, analysis, and communication</strong>. My day-to-day involves writing complex SQL against PostgreSQL, building analytical workflows in Python, and turning the output into dashboards that non-technical stakeholders can actually use.</p>
-        <p>My background is in <strong>HR &amp; performance analytics</strong> — building KPI frameworks, organizational hierarchies, and reporting systems for enterprise clients. That domain focus means I don't just produce charts; I produce <strong>insights grounded in real business context</strong>.</p>
-        <p>I'm open to <strong>remote roles worldwide</strong> across data analysis, business intelligence, reporting, and data operations — from hands-on data cleaning and structuring to building the reports and dashboards leadership relies on.</p>
+        <p>My background spans <strong>HR &amp; people analytics</strong> and <strong>retail &amp; supply chain intelligence</strong> &mdash; building KPI frameworks, inventory health models, customer segmentation, and channel performance reports for audiences from team leads to General Managers.</p>
+        <p>I&rsquo;m open to <strong>remote roles worldwide</strong> across data analysis, business intelligence, reporting, and data operations &mdash; from hands-on data cleaning and SQL modelling to the dashboards and recommendations leadership acts on.</p>
       </div>
       <div class="facts reveal">
-        <div class="fact"><span>Open to</span><span>Analyst · BI · Reporting · Data Ops</span></div>
-        <div class="fact"><span>Core stack</span><span>SQL · Python · BI</span></div>
+        <div class="fact"><span>Open to</span><span>Analyst &middot; BI &middot; Reporting &middot; Ops</span></div>
+        <div class="fact"><span>Core stack</span><span>SQL &middot; Python &middot; Google Sheets</span></div>
         <div class="fact"><span>Database</span><span>PostgreSQL</span></div>
         <div class="fact"><span>Based in</span><span>Indonesia (GMT+7)</span></div>
-        <div class="fact"><span>Work mode</span><span>Remote · Worldwide</span></div>
+        <div class="fact"><span>Work mode</span><span>Remote &middot; Worldwide</span></div>
         <div class="fact"><span>Status</span><span>Actively interviewing</span></div>
       </div>
     </div>
@@ -208,34 +210,31 @@
 
 <section id="skills">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="sec-num">02</span>
-      <h2 class="sec-title">Skills</h2>
-    </div>
+    <div class="sec-head reveal"><span class="sec-num">02</span><h2 class="sec-title">Skills</h2></div>
     <div class="skills-grid">
       <div class="skill-card reveal">
         <h3><span class="dot"></span>SQL &amp; Databases</h3>
-        <ul><li>PostgreSQL</li><li>CTEs &amp; window functions</li><li>Query optimization</li><li>Multi-tenant reporting</li><li>Data modeling</li></ul>
+        <ul><li>PostgreSQL</li><li>CTEs &amp; window functions</li><li>Multi-table joins &amp; self-joins</li><li>Query optimization</li><li>Data modeling</li></ul>
       </div>
       <div class="skill-card reveal">
         <h3><span class="dot"></span>Python</h3>
-        <ul><li>pandas · numpy</li><li>Data cleaning &amp; ETL</li><li>Automation scripting</li><li>Jupyter / EDA</li><li>matplotlib · plotly</li></ul>
+        <ul><li>pandas &middot; numpy &middot; scipy</li><li>Data cleaning &amp; ETL</li><li>Statistical analysis</li><li>Jupyter / EDA</li><li>matplotlib &middot; plotly &middot; folium</li></ul>
+      </div>
+      <div class="skill-card reveal">
+        <h3><span class="dot"></span>Spreadsheets &amp; Reporting</h3>
+        <ul><li>Google Sheets (advanced)</li><li>Pivot tables &amp; formulas</li><li>Looker Studio</li><li>Data modeling in Sheets</li><li>Cross-functional reports</li></ul>
       </div>
       <div class="skill-card reveal">
         <h3><span class="dot"></span>Visualization &amp; BI</h3>
-        <ul><li>Apache Superset</li><li>Metabase · Redash</li><li>Looker Studio</li><li>Tableau</li><li>Dashboard design</li></ul>
+        <ul><li>Tableau</li><li>Apache Superset</li><li>Metabase &middot; Redash</li><li>Geographic / spatial charts</li><li>Dashboard design</li></ul>
       </div>
       <div class="skill-card reveal">
         <h3><span class="dot"></span>Analysis</h3>
-        <ul><li>Exploratory data analysis</li><li>KPI / metric design</li><li>Cohort &amp; trend analysis</li><li>Hierarchical data</li><li>Insight storytelling</li></ul>
+        <ul><li>RFM &amp; cohort analysis</li><li>A/B testing &amp; significance</li><li>KPI / metric design</li><li>Inventory &amp; supply chain</li><li>Insight storytelling</li></ul>
       </div>
       <div class="skill-card reveal">
         <h3><span class="dot"></span>Domain</h3>
-        <ul><li>HR / people analytics</li><li>Performance management</li><li>BSC / KPI frameworks</li><li>Org hierarchy modeling</li><li>Executive reporting</li></ul>
-      </div>
-      <div class="skill-card reveal">
-        <h3><span class="dot"></span>Workflow</h3>
-        <ul><li>Git &amp; version control</li><li>Process automation</li><li>AI-assisted workflows</li><li>Documentation</li><li>Stakeholder reporting</li></ul>
+        <ul><li>HR / people analytics</li><li>Retail &amp; e-commerce</li><li>Supply chain &amp; inventory</li><li>BSC / KPI frameworks</li><li>Executive reporting</li></ul>
       </div>
     </div>
   </div>
@@ -243,86 +242,258 @@
 
 <section id="projects">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="sec-num">03</span>
-      <h2 class="sec-title">Selected Projects</h2>
+    <div class="sec-head reveal"><span class="sec-num">03</span><h2 class="sec-title">Selected Projects</h2></div>
+    <div class="proj-filters reveal">
+      <button class="filter-pill active" data-filter="all">All Projects</button>
+      <button class="filter-pill" data-filter="hr">HR &amp; People Analytics</button>
+      <button class="filter-pill" data-filter="retail">Retail &amp; E-commerce</button>
     </div>
-    <div class="project reveal">
-      <span class="proj-idx">01</span>
-      <div>
-        <h3 class="proj-title">HR Analytics — End-to-End People Analytics</h3>
-        <p class="proj-desc">A full analyst workflow on a ~4,500-employee HR dataset: raw messy data → cleaning → SQL modelling → analysis → dashboard. Answers real questions on attrition, performance, and compensation, with a reproducible data pipeline behind it.</p>
-        <div class="proj-tags">
-          <span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">pandas</span><span class="tag">End-to-end</span><span class="tag">People Analytics</span>
+    <div class="proj-grid">
+
+      <!-- GROUP: HR -->
+      <div class="proj-group-sep reveal" data-category="hr">
+        <span class="proj-group-label">HR &amp; People Analytics &mdash; Project 01</span>
+        <span class="proj-group-line"></span>
+      </div>
+
+      <!-- HR Featured -->
+      <div class="proj-card proj-card--featured reveal" data-category="hr">
+        <div class="proj-card-top">
+          <span class="proj-card-num">01</span>
+          <span class="status-badge status--done">Complete</span>
+        </div>
+        <h3 class="proj-card-title">End-to-End HR Analytics Platform</h3>
+        <p class="proj-card-desc">Full analyst workflow on a ~4,500-employee dataset for fictional Nusantara Tech: messy raw CSV &rarr; validated clean data &rarr; multi-level SQL analysis &rarr; four-tab Tableau dashboard. Built to give the CHRO and People team a defensible view of attrition risk, performance distribution, and compensation equity &mdash; covering every stage from data pipeline to executive insight.</p>
+        <div class="proj-metrics">
+          <div class="proj-metric">
+            <div class="proj-metric-val">15.2%</div>
+            <div class="proj-metric-lbl">Overall attrition &middot; Engineering anomaly flagged at 18.8%</div>
+          </div>
+          <div class="proj-metric">
+            <div class="proj-metric-val">&minus;1.6%</div>
+            <div class="proj-metric-lbl">Gender pay gap &middot; Near-parity except Head level (+10%)</div>
+          </div>
+          <div class="proj-metric">
+            <div class="proj-metric-val">88.9%</div>
+            <div class="proj-metric-lbl">Weighted goal achievement &middot; Active employees only</div>
+          </div>
+        </div>
+        <div class="proj-card-tags">
+          <span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">pandas</span>
+          <span class="tag">Tableau</span><span class="tag">People Analytics</span><span class="tag">End-to-end</span>
+        </div>
+        <div class="proj-card-footer">
+          <span class="proj-card-domain">HR &amp; People Analytics</span>
+          <span class="proj-card-links">
+            <a href="https://github.com/ifkmldk/hr-analytics" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <span class="sep">|</span>
+            <a href="#dashboards">Live Dashboard &rarr;</a>
+          </span>
         </div>
       </div>
-      <div class="proj-links"><a href="https://github.com/ifkmldk/hr-analytics" target="_blank" rel="noopener">GitHub →</a></div>
-    </div>
-    <div class="project reveal">
-      <span class="proj-idx">02</span>
-      <div>
-        <h3 class="proj-title">Data Cleaning Pipeline</h3>
-        <p class="proj-desc">The cleaning stage of the HR project, built two ways: a step-by-step notebook that documents every decision, and a modular production script. Handles mixed date formats, inconsistent categories, text-encoded numbers, duplicates, and missing values — with referential-integrity validation at the end.</p>
-        <div class="proj-tags">
-          <span class="tag">Python</span><span class="tag">pandas</span><span class="tag">Data cleaning</span><span class="tag">ETL</span><span class="tag">Validation</span>
+
+      <!-- HR: Data Cleaning -->
+      <div class="proj-card reveal" data-category="hr">
+        <div class="proj-card-top">
+          <span class="proj-phase-label">Data Cleaning</span>
+          <span class="status-badge status--done">Complete</span>
+        </div>
+        <h3 class="proj-card-title">Data Cleaning Pipeline</h3>
+        <p class="proj-card-desc">Handles mixed date formats, inconsistent categories, text-encoded numbers, duplicates, and missing values &mdash; with full referential-integrity validation at the end. Documented step-by-step in a notebook; packaged as a modular production script.</p>
+        <div class="proj-card-tags">
+          <span class="tag">Python</span><span class="tag">pandas</span><span class="tag">ETL</span><span class="tag">Validation</span>
+        </div>
+        <div class="proj-card-footer">
+          <span class="proj-card-domain">HR &amp; People Analytics</span>
+          <span class="proj-card-links">
+            <a href="https://github.com/ifkmldk/hr-analytics/blob/main/notebooks/01_data_cleaning.ipynb" target="_blank" rel="noopener">Notebook &rarr;</a>
+            <span class="sep">|</span>
+            <a href="https://github.com/ifkmldk/hr-analytics/blob/main/scripts/clean_hr_data.py" target="_blank" rel="noopener">Script &rarr;</a>
+          </span>
         </div>
       </div>
-      <div class="proj-links">
-        <a href="https://github.com/ifkmldk/hr-analytics/blob/main/notebooks/01_data_cleaning.ipynb" target="_blank" rel="noopener">Notebook →</a><br>
-        <a href="https://github.com/ifkmldk/hr-analytics/blob/main/scripts/clean_hr_data.py" target="_blank" rel="noopener">Script →</a>
-      </div>
-    </div>
-    <div class="project reveal">
-      <span class="proj-idx">03</span>
-      <div>
-        <h3 class="proj-title">SQL Analysis — Joins, CTEs &amp; Window Functions</h3>
-        <p class="proj-desc">SQL layer of the HR project: querying five related tables in PostgreSQL — multi-table joins, CTEs, window functions, and a self-join on the manager hierarchy to model the org chart and surface attrition and performance patterns.</p>
-        <div class="proj-tags">
-          <span class="tag">PostgreSQL</span><span class="tag">SQL</span><span class="tag">CTEs</span><span class="tag">Window functions</span><span class="tag">Self-join</span>
+
+      <!-- HR: SQL Analysis (FIXED: now Complete) -->
+      <div class="proj-card reveal" data-category="hr">
+        <div class="proj-card-top">
+          <span class="proj-phase-label">SQL Analysis</span>
+          <span class="status-badge status--done">Complete</span>
+        </div>
+        <h3 class="proj-card-title">SQL &mdash; Joins, CTEs &amp; Window Functions</h3>
+        <p class="proj-card-desc">Querying five related tables in PostgreSQL: multi-table joins, CTEs, window functions (LAG, RANK), and a self-join on the manager hierarchy to model the org chart and surface attrition and performance patterns by department and level.</p>
+        <div class="proj-card-tags">
+          <span class="tag">PostgreSQL</span><span class="tag">CTEs</span><span class="tag">Window Functions</span><span class="tag">Self-join</span>
+        </div>
+        <div class="proj-card-footer">
+          <span class="proj-card-domain">HR &amp; People Analytics</span>
+          <span class="proj-card-links">
+            <a href="https://github.com/ifkmldk/hr-analytics/tree/main/sql" target="_blank" rel="noopener">GitHub &rarr;</a>
+          </span>
         </div>
       </div>
-      <div class="proj-links"><a href="https://github.com/ifkmldk/hr-analytics/tree/main/sql" target="_blank" rel="noopener">GitHub →</a></div>
+
+      <!-- HR: Tableau Dashboard (NEW) -->
+      <div class="proj-card reveal" data-category="hr">
+        <div class="proj-card-top">
+          <span class="proj-phase-label">Data Visualization</span>
+          <span class="status-badge status--done">Complete</span>
+        </div>
+        <h3 class="proj-card-title">Tableau &mdash; 4-Tab HR Dashboard</h3>
+        <p class="proj-card-desc">Four-tab Tableau Public story covering Overview, Attrition, Performance, and Compensation. Features a deliberate design system &mdash; gray+red highlight logic for anomalies, LOD calculated fields to resolve join fanout, and action filters linking scatter plots to bar chart breakdowns.</p>
+        <div class="proj-card-tags">
+          <span class="tag">Tableau</span><span class="tag">LOD</span><span class="tag">Design System</span><span class="tag">Storytelling</span>
+        </div>
+        <div class="proj-card-footer">
+          <span class="proj-card-domain">HR &amp; People Analytics</span>
+          <span class="proj-card-links">
+            <a href="#dashboards">Live Dashboard &rarr;</a>
+          </span>
+        </div>
+      </div>
+
+      <!-- GROUP: RETAIL -->
+      <div class="proj-group-sep reveal" data-category="retail">
+        <span class="proj-group-label">Retail &amp; E-commerce Analytics &mdash; Project 02</span>
+        <span class="proj-group-line"></span>
+      </div>
+
+      <!-- Retail: Featured -->
+      <div class="proj-card proj-card--featured reveal" data-category="retail">
+        <div class="proj-card-top">
+          <span class="proj-card-num">02</span>
+          <span class="status-badge status--progress">In Progress</span>
+        </div>
+        <h3 class="proj-card-title">Retail &amp; E-commerce Analytics Platform</h3>
+        <p class="proj-card-desc">End-to-end analytics for Meridian Commerce Co. &mdash; a fictional omnichannel fashion &amp; FMCG retailer across marketplace, D2C, and offline channels. Covers the full analyst stack: transaction data cleaning &rarr; SQL analysis &rarr; advanced customer analytics (RFM, cohort, A/B testing) &rarr; Looker Studio dashboard with geographic sales maps. Built to answer what a GM and Finance team act on every month.</p>
+        <div class="proj-scope">
+          <div class="scope-item">
+            <span class="scope-num">01</span>
+            <div>
+              <div class="scope-title">Channel Performance &amp; Funnel</div>
+              <div class="scope-kpis">AOV &middot; Conversion Rate &middot; Traffic<br>Funnel Drop-off &middot; ROAS by Channel</div>
+            </div>
+          </div>
+          <div class="scope-item">
+            <span class="scope-num">02</span>
+            <div>
+              <div class="scope-title">Inventory Health</div>
+              <div class="scope-kpis">Sell-Through Rate &middot; ABC-XYZ Classification<br>Aging Stock &middot; Deadstock &middot; ROP &middot; ITR</div>
+            </div>
+          </div>
+          <div class="scope-item">
+            <span class="scope-num">03</span>
+            <div>
+              <div class="scope-title">Customer Analytics</div>
+              <div class="scope-kpis">RFM Segmentation &middot; Cohort Retention<br>Customer Lifetime Value &middot; Churn Risk</div>
+            </div>
+          </div>
+          <div class="scope-item">
+            <span class="scope-num">04</span>
+            <div>
+              <div class="scope-title">Commercial P&amp;L &amp; A/B Testing</div>
+              <div class="scope-kpis">Contribution Margin &middot; Channel P&amp;L<br>Promo A/B Test &middot; Statistical Significance</div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-card-tags">
+          <span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">Google Sheets</span>
+          <span class="tag">Looker Studio</span><span class="tag">RFM</span><span class="tag">A/B Testing</span>
+          <span class="tag">Geospatial</span><span class="tag">Supply Chain</span>
+        </div>
+        <div class="proj-card-footer">
+          <span class="proj-card-domain">Retail &amp; E-commerce Analytics</span>
+          <span class="proj-card-links">
+            <a href="https://github.com/ifkmldk" target="_blank" rel="noopener">GitHub (coming) &rarr;</a>
+          </span>
+        </div>
+      </div>
+
+      <!-- Retail: Data Cleaning -->
+      <div class="proj-card reveal" data-category="retail">
+        <div class="proj-card-top">
+          <span class="proj-phase-label">Data Cleaning</span>
+          <span class="status-badge status--planned">Planned</span>
+        </div>
+        <h3 class="proj-card-title">Transaction &amp; Inventory Data Pipeline</h3>
+        <p class="proj-card-desc">Cleaning and validating five retail tables: SKU catalog, omnichannel transactions, inventory snapshots, traffic sessions, and marketing spend. Handles channel-name normalization, currency inconsistencies, negative stock entries, and duplicate transaction IDs.</p>
+        <div class="proj-card-tags">
+          <span class="tag">Python</span><span class="tag">pandas</span><span class="tag">ETL</span><span class="tag">Validation</span>
+        </div>
+        <div class="proj-card-footer">
+          <span class="proj-card-domain">Retail &amp; E-commerce Analytics</span>
+          <span class="proj-card-links"><a href="https://github.com/ifkmldk" target="_blank" rel="noopener">GitHub &rarr;</a></span>
+        </div>
+      </div>
+
+      <!-- Retail: SQL -->
+      <div class="proj-card reveal" data-category="retail">
+        <div class="proj-card-top">
+          <span class="proj-phase-label">SQL Analysis</span>
+          <span class="status-badge status--planned">Planned</span>
+        </div>
+        <h3 class="proj-card-title">Inventory, Channel &amp; Commercial SQL</h3>
+        <p class="proj-card-desc">Querying omnichannel transaction data in PostgreSQL: sell-through rate by SKU, ABC-XYZ inventory classification, aging stock flags (30/60/90 days), reorder point with lead time, and contribution margin by channel.</p>
+        <div class="proj-card-tags">
+          <span class="tag">PostgreSQL</span><span class="tag">CTEs</span><span class="tag">Window Functions</span><span class="tag">Inventory Analytics</span>
+        </div>
+        <div class="proj-card-footer">
+          <span class="proj-card-domain">Retail &amp; E-commerce Analytics</span>
+          <span class="proj-card-links"><a href="https://github.com/ifkmldk" target="_blank" rel="noopener">GitHub &rarr;</a></span>
+        </div>
+      </div>
+
+      <!-- Retail: Advanced Analytics (NEW) -->
+      <div class="proj-card reveal" data-category="retail">
+        <div class="proj-card-top">
+          <span class="proj-phase-label">Advanced Analytics</span>
+          <span class="status-badge status--planned">Planned</span>
+        </div>
+        <h3 class="proj-card-title">RFM, Cohort Analysis &amp; A/B Testing</h3>
+        <p class="proj-card-desc">Customer segmentation using RFM scoring (Champions, At Risk, Lost, New). Retention cohort heatmaps by acquisition month. Statistical A/B testing of promo effectiveness &mdash; chi-square for conversion rates, t-test for AOV, with p-value and confidence intervals. Geographic sales distribution via choropleth maps.</p>
+        <div class="proj-card-tags">
+          <span class="tag">Python</span><span class="tag">scipy</span><span class="tag">RFM</span>
+          <span class="tag">Cohort</span><span class="tag">A/B Testing</span><span class="tag">plotly</span><span class="tag">folium</span>
+        </div>
+        <div class="proj-card-footer">
+          <span class="proj-card-domain">Retail &amp; E-commerce Analytics</span>
+          <span class="proj-card-links"><a href="https://github.com/ifkmldk" target="_blank" rel="noopener">GitHub &rarr;</a></span>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- ===================== DASHBOARDS ===================== -->
 <section id="dashboards">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="sec-num">04</span>
-      <h2 class="sec-title">Live Dashboards</h2>
-    </div>
-    <p class="dash-note reveal">// Interactive HR Analytics dashboard — built in Tableau Public</p>
+    <div class="sec-head reveal"><span class="sec-num">04</span><h2 class="sec-title">Live Dashboards</h2></div>
+    <p class="dash-note reveal">// Nusantara Tech &middot; HR Analytics &middot; Tableau Public &middot; Overview &middot; Attrition &middot; Performance &middot; Compensation</p>
     <div class="dash-frame reveal">
-      <div class='tableauPlaceholder' id='viz1781501040667' style='position: relative'>
-        <noscript>
-          <a href='#'><img alt='HR-Analytics' src='https://public.tableau.com/static/images/hr/hr-analytics_17811389763690/HR-Analytics/1_rss.png' style='border: none' /></a>
-        </noscript>
-        <object class='tableauViz' style='display:none;'>
-          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-          <param name='embed_code_version' value='3' />
-          <param name='site_root' value='' />
-          <param name='name' value='hr-analytics_17811389763690/HR-Analytics' />
-          <param name='tabs' value='no' />
-          <param name='toolbar' value='yes' />
-          <param name='static_image' value='https://public.tableau.com/static/images/hr/hr-analytics_17811389763690/HR-Analytics/1.png' />
-          <param name='animate_transition' value='yes' />
-          <param name='display_static_image' value='yes' />
-          <param name='display_spinner' value='yes' />
-          <param name='display_overlay' value='yes' />
-          <param name='display_count' value='yes' />
-          <param name='language' value='en-US' />
+      <div class="tableauPlaceholder" id="viz1781501040667" style="position:relative">
+        <noscript><a href="#"><img alt="HR-Analytics" src="https://public.tableau.com/static/images/hr/hr-analytics_17811389763690/HR-Analytics/1_rss.png" style="border:none"/></a></noscript>
+        <object class="tableauViz" style="display:none">
+          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"/>
+          <param name="embed_code_version" value="3"/>
+          <param name="site_root" value=""/>
+          <param name="name" value="hr-analytics_17811389763690/HR-Analytics"/>
+          <param name="tabs" value="no"/>
+          <param name="toolbar" value="yes"/>
+          <param name="static_image" value="https://public.tableau.com/static/images/hr/hr-analytics_17811389763690/HR-Analytics/1.png"/>
+          <param name="animate_transition" value="yes"/>
+          <param name="display_static_image" value="yes"/>
+          <param name="display_spinner" value="yes"/>
+          <param name="display_overlay" value="yes"/>
+          <param name="display_count" value="yes"/>
+          <param name="language" value="en-US"/>
         </object>
       </div>
-      <script type='text/javascript'>
-        var divElement = document.getElementById('viz1781501040667');
-        var vizElement = divElement.getElementsByTagName('object')[0];
-        vizElement.style.width = '1200px';
-        vizElement.style.height = '1150px';
-        var scriptElement = document.createElement('script');
-        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      <script type="text/javascript">
+        var divElement=document.getElementById("viz1781501040667");
+        var vizElement=divElement.getElementsByTagName("object")[0];
+        vizElement.style.width="1200px";vizElement.style.height="1150px";
+        var scriptElement=document.createElement("script");
+        scriptElement.src="https://public.tableau.com/javascripts/api/viz_v1.js";
+        vizElement.parentNode.insertBefore(scriptElement,vizElement);
       </script>
     </div>
   </div>
@@ -330,14 +501,11 @@
 
 <section id="writing">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="sec-num">05</span>
-      <h2 class="sec-title">Writing &amp; Analysis</h2>
-    </div>
+    <div class="sec-head reveal"><span class="sec-num">05</span><h2 class="sec-title">Writing &amp; Analysis</h2></div>
     <div class="post reveal">
       <span class="post-date">Coming soon</span>
       <div>
-        <h3 class="post-title">How I cut a PostgreSQL reporting query's runtime with LATERAL joins</h3>
+        <h3 class="post-title">How I cut a PostgreSQL reporting query&rsquo;s runtime with LATERAL joins</h3>
         <p class="post-excerpt">A walkthrough of reading the query plan, finding the bottleneck, and rewriting for speed without changing a single output row.</p>
       </div>
     </div>
@@ -345,7 +513,7 @@
       <span class="post-date">Coming soon</span>
       <div>
         <h3 class="post-title">Designing a Balanced Scorecard KPI framework from scratch</h3>
-        <p class="post-excerpt">Translating an org hierarchy into weighted KPIs — the data modeling decisions, and what leadership actually wanted to see.</p>
+        <p class="post-excerpt">Translating an org hierarchy into weighted KPIs &mdash; the data modeling decisions, and what leadership actually wanted to see.</p>
       </div>
     </div>
     <div class="post reveal">
@@ -360,17 +528,14 @@
 
 <section id="contact">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="sec-num">06</span>
-      <h2 class="sec-title">Get in touch</h2>
-    </div>
+    <div class="sec-head reveal"><span class="sec-num">06</span><h2 class="sec-title">Get in touch</h2></div>
     <div class="contact-flex reveal">
-      <p class="contact-big">Need someone reliable with your data — from cleanup to insight?<br><a href="mailto:fadhilah.akmaldika@gmail.com">Let's talk →</a></p>
+      <p class="contact-big">Need someone reliable with your data &mdash; from cleanup to insight?<br><a href="mailto:fadhilah.akmaldika@gmail.com">Let&rsquo;s talk &rarr;</a></p>
       <div class="contact-row">
         <a href="mailto:fadhilah.akmaldika@gmail.com">Email</a>
         <a href="https://github.com/ifkmldk" target="_blank" rel="noopener">GitHub</a>
         <a href="https://www.linkedin.com/in/irsyadfa/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="assets/Irsyad Fadhilah Akmaldika - Data Analyst - CV.pdf" download>Résumé (PDF)</a>
+        <a href="assets/Irsyad Fadhilah Akmaldika - Data Analyst - CV.pdf" download>R&eacute;sum&eacute; (PDF)</a>
       </div>
     </div>
   </div>
@@ -378,24 +543,27 @@
 
 <footer>
   <div class="wrap">
-    <span>© <span id="year"></span> Irsyad Akmaldika · Data Analyst · BI · Reporting — SQL · Python</span>
+    <span>&copy; <span id="year"></span> Irsyad Akmaldika &middot; Data Analyst &middot; BI &middot; Reporting &mdash; SQL &middot; Python</span>
     <span>Available for remote roles worldwide</span>
   </div>
 </footer>
 
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-  document.querySelectorAll('#navlinks a').forEach(a =>
-    a.addEventListener('click', () => document.getElementById('navlinks').classList.remove('open'))
-  );
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.reveal').forEach((el, i) => {
-    el.style.transitionDelay = (Math.min(i % 6, 5) * 0.06) + 's';
-    io.observe(el);
+  document.getElementById("year").textContent=new Date().getFullYear();
+  document.querySelectorAll("#navlinks a").forEach(a=>a.addEventListener("click",()=>document.getElementById("navlinks").classList.remove("open")));
+  const io=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.08});
+  document.querySelectorAll(".reveal").forEach((el,i)=>{el.style.transitionDelay=(Math.min(i%4,3)*.07)+"s";io.observe(el)});
+  document.querySelectorAll(".filter-pill").forEach(pill=>{
+    pill.addEventListener("click",()=>{
+      document.querySelectorAll(".filter-pill").forEach(p=>p.classList.remove("active"));
+      pill.classList.add("active");
+      const filter=pill.dataset.filter;
+      document.querySelectorAll("[data-category]").forEach(el=>{
+        if(filter==="all"||el.dataset.category===filter){el.classList.remove("is-hidden")}
+        else{el.classList.add("is-hidden")}
+      });
+    });
   });
 </script>
-
 </body>
 </html>
